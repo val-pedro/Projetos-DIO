@@ -1,0 +1,17 @@
+2022-01-13 00:57:13 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PESON" not found; SQL statement:
+SELECT * FROM PESON [42102-200]
+2022-01-13 01:01:55 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM PERSON
+
+SELECT[*] * FROM PHONE"; SQL statement:
+SELECT * FROM PERSON
+
+SELECT * FROM PHONE [42000-200]
+2022-01-13 01:01:59 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM PERSON
+
+SELECT[*] * FROM PHONE"; SQL statement:
+SELECT * FROM PERSON
+
+SELECT * FROM PHONE [42000-200]
