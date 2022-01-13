@@ -1,0 +1,9 @@
+/home/valdemir/Documentos/Estudos/dio/dio-project-personapi/src/main/java/one/digitalinnovation/personapi/controller/PersonController.java
+/home/valdemir/Documentos/Estudos/dio/dio-project-personapi/src/main/java/one/digitalinnovation/personapi/repository/PersonRepository.java
+/home/valdemir/Documentos/Estudos/dio/dio-project-personapi/src/main/java/one/digitalinnovation/personapi/dto/request/PersonDTO.java
+/home/valdemir/Documentos/Estudos/dio/dio-project-personapi/src/main/java/one/digitalinnovation/personapi/entity/Person.java
+/home/valdemir/Documentos/Estudos/dio/dio-project-personapi/src/main/java/one/digitalinnovation/personapi/dto/request/PhoneDTO.java
+/home/valdemir/Documentos/Estudos/dio/dio-project-personapi/src/main/java/one/digitalinnovation/personapi/enums/PhoneType.java
+/home/valdemir/Documentos/Estudos/dio/dio-project-personapi/src/main/java/one/digitalinnovation/personapi/services/PersonService.java
+/home/valdemir/Documentos/Estudos/dio/dio-project-personapi/src/main/java/one/digitalinnovation/personapi/PersonapiApplication.java
+/home/valdemir/Documentos/Estudos/dio/dio-project-personapi/src/main/java/one/digitalinnovation/personapi/entity/Phone.java

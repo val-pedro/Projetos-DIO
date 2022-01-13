@@ -1,0 +1,13 @@
+one/digitalinnovation/personapi/repository/PersonRepository.class
+one/digitalinnovation/personapi/enums/PhoneType.class
+one/digitalinnovation/personapi/dto/request/PhoneDTO.class
+one/digitalinnovation/personapi/entity/Phone$PhoneBuilder.class
+one/digitalinnovation/personapi/services/PersonService.class
+one/digitalinnovation/personapi/dto/request/PhoneDTO$PhoneDTOBuilder.class
+one/digitalinnovation/personapi/controller/PersonController.class
+one/digitalinnovation/personapi/entity/Person.class
+one/digitalinnovation/personapi/PersonapiApplication.class
+one/digitalinnovation/personapi/dto/request/PersonDTO$PersonDTOBuilder.class
+one/digitalinnovation/personapi/dto/request/PersonDTO.class
+one/digitalinnovation/personapi/entity/Person$PersonBuilder.class
+one/digitalinnovation/personapi/entity/Phone.class
