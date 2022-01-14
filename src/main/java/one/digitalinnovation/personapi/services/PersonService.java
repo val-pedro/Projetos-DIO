@@ -2,6 +2,7 @@ package one.digitalinnovation.personapi.services;
 
 import one.digitalinnovation.personapi.dto.request.PersonDTO;
 import one.digitalinnovation.personapi.entity.Person;
+import one.digitalinnovation.personapi.exception.PersonNotFoundException;
 import one.digitalinnovation.personapi.mapper.PersonMapper;
 import one.digitalinnovation.personapi.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,17 +23,32 @@ public class PersonService {
         this.personRepository = personRepository;
     }
 
-    public String createPerson(PersonDTO personDTO) {
+    public PersonDTO save(PersonDTO personDTO) {
         Person personToSave = this.personMapper.toModel(personDTO);
-
-        this.personRepository.save(personToSave);
-        return "Person created with success";
+        return this.personMapper.toDTO(this.personRepository.save(personToSave));
     }
 
-    public List<PersonDTO> getAllPerson() {
+    public List<PersonDTO> findAll() {
         List<Person> persons = this.personRepository.findAll();
         return persons.stream()
                 .map(this.personMapper::toDTO)
                 .collect(Collectors.toList());
+    }
+
+    public PersonDTO findById(Long id) throws PersonNotFoundException {
+        Person person = this.personRepository.findById(id)
+                .orElseThrow(() -> new PersonNotFoundException(id));
+
+        return this.personMapper.toDTO(person);
+    }
+
+    public PersonDTO update(PersonDTO personDTO) throws PersonNotFoundException{
+        this.findById(personDTO.getId());
+        return this.save(personDTO);
+    }
+
+    public void delete(Long id) throws PersonNotFoundException {
+        PersonDTO personDTO = this.findById(id);
+        this.personRepository.delete(this.personMapper.toModel(personDTO));
     }
 }
